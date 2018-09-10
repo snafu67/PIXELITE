@@ -1,0 +1,108 @@
+* {
+	box-sizing: border-box;
+	outline: none;
+	text-decoration: none;
+	transition: all .2s ease 0s;
+    /* Visualisation des éléments */
+    /*border: 1px dotted rgba(0,0,0,0.3);*/
+}
+
+*:hover {
+	transition: all .2s ease 0s;
+}
+
+html {font-size: 62.5%}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    line-height: 1.6;
+	background-color: #90FA3F;
+}
+
+a, a:hover, a:visited, a:active {
+	text-decoration: none;
+	
+}
+img {
+	max-width: 100%;
+}
+
+h1, h2 {
+	font-family: 'VT323', monospace;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 0;
+	color: #5500AA;
+}
+
+h1 {
+	font-size: 5em;
+	text-align: center;
+	font-weight: bold
+}
+
+h2 {
+	font-size: 2.4rem;
+	margin: 0;
+}
+
+p {
+	margin: 15px 0;
+}
+
+.container {
+	margin: 25px;
+}
+/* HEADER */
+header {
+	text-align: center;
+ }
+
+header nav {
+	background-color: #5500AA;
+}
+
+header nav a {
+	font-family: "VT323", monospace;
+	display: block;
+	padding: 25px;
+	font-size: 2.6em;
+	color: #90FA3F;
+}
+
+header nav a:hover {
+	background-color: #90FA3F;
+	color: #5500AA;
+}
+
+.pixelite {
+	background: url(../img/wallpaper.wiki-HD-Download-Explosion-Pictures-PIC-WPB005825.jpg) no-repeat center center;
+	background-size: cover;
+	
+}
+
+/* VERSION TABLETTE */
+@media screen and (min-width: 768px) {
+	section {
+		display: block;
+		padding: 25px;
+	}
+}
+
+/* VERSION DESKTOP */
+@media screen and (min-width:1025px) {
+	.container {
+		max-width: 80%;
+		margin: 0 auto;
+	}
+	header nav {
+		display: flex;
+	}
+
+	header nav a {
+		display: inline;
+		width: 25%;
+	}
+}
